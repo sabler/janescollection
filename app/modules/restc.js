@@ -1,7 +1,3 @@
-console.log("Howdy from index.js!")
-const mdbc = require('./modules/mdbc.js')
-
-
 // RestifyJS
 const restify = require('restify');
 
@@ -17,8 +13,3 @@ function baseResponse(req, res, next) {
 }
 
 codeServ.get('/friendsfamily/jj/:empId', baseResponse);
-
-
-codeServ.listen(8000,function() {
-    console.log("Go ahead, I'm listening...");
-})
