@@ -17,8 +17,8 @@
   },
   "homepage": "https://github.com/sabler/janescollection#readme",
   "dependencies": {
-    "express": "^4.16.4",
-    "mongodb": "^3.2.3"
+    "mongodb": "^3.2.3",
+    "restify": "^8.3.0"
   },
   "devDependencies": {
     "jest": "^24.7.1"
