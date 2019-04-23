@@ -12,7 +12,7 @@ const codeServ = restify.createServer( {
 
 
 function baseResponse(req, res, next) {
-    res.send("I'm here!");
+    res.send(`I'm here, employee ${req.params.empId}`);
     next();
 }
 
