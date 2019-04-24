@@ -1,6 +1,6 @@
-console.log("Howdy from index.js!")
-const mdbc = require('./modules/mdbc.js')
+console.log("Trying to pull-start the app like your dad's old lawnmower...")
 
+const mdbc = require('./modules/mdbc.js')
 
 // RestifyJS
 const restify = require('restify');
@@ -16,7 +16,7 @@ const codeServ = restify.createServer( {
 // Function for initial testing, remove before deployment
 function baseResponse(req, res, next) {
     res.send(`I'm here, employee ${req.params.empId}`);
-    next();
+    next(false);
 }
 
 
